@@ -1,165 +1,149 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单小乐的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .profile, .blog, .contact {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .profile img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .profile:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            margin-top: 20px;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;单小乐的个人网页&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile, .blog, .contact {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>float: left;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile:after {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: table;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>clear: both;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.login-form {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 100px auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.login-form input {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.login-form button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007BFF;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.login-form button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hidden {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="login" class="login-form"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;登录&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;form onsubmit="return login(event)"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="username"&gt;用户名:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="username" required&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="password"&gt;密码:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="password" id="password" required&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="submit"&gt;登录&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="content" class="container hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;欢迎来到单小乐的个人网页&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="profile"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="profile-picture.jpg" alt="单小乐的照片" width="150"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;关于我&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;你好，我是单小乐，目前在亚马逊担任产品经理，并且是福布斯青年精英TOP10。我热衷于创新和科技，致力于推动产品的发展和用户体验的提升。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="blog"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;博客&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;最新博客文章&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;在我的最新博客文章中，我讨论了产品管理中的挑战和机遇...&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#"&gt;阅读更多&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="contact"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;联系我&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;form action="#" method="post"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="name"&gt;姓名:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="email"&gt;电子邮件:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="message"&gt;信息:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;textarea id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button type="submit"&gt;发送信息&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2024 单小乐的个人网页. 保留所有权利.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const validUsername = '单小乐';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const validPassword = 'password123';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function login(event) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>event.preventDefault();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const username = document.getElementById('username').value;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const password = document.getElementById('password').value;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (username === validUsername &amp;&amp; password === validPassword) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('login').classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('content').classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>alert('用户名或密码错误');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div id="login" class="login-form">
+        <h2>登录</h2>
+        <form onsubmit="return login(event)">
+            <label for="username">用户名:</label><br>
+            <input type="text" id="username" required><br><br>
+            <label for="password">密码:</label><br>
+            <input type="password" id="password" required><br><br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <div id="content" class="container hidden">
+        <header>
+            <h1>欢迎来到单小乐的个人网页</h1>
+        </header>
+        <section class="profile">
+            <img src="profile-picture.jpg" alt="单小乐的照片" width="150">
+            <h2>关于我</h2>
+            <p>你好，我是单小乐，目前在亚马逊担任产品经理，并且是福布斯青年精英TOP10。我热衷于创新和科技，致力于推动产品的发展和用户体验的提升。</p>
+        </section>
+        <section class="blog">
+            <h2>博客</h2>
+            <article>
+                <h3>最新博客文章</h3>
+                <p>在我的最新博客文章中，我讨论了产品管理中的挑战和机遇...</p>
+                <a href="#">阅读更多</a>
+            </article>
+        </section>
+        <section class="contact">
+            <h2>联系我</h2>
+            <form action="#" method="post">
+                <label for="name">姓名:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">电子邮件:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">信息:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">发送信息</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 单小乐的个人网页. 保留所有权利.</p>
+    </footer>
+
+    <script>
+        const validUsername = '单小乐';
+        const validPassword = 'password123';
+
+        function login(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === validUsername && password === validPassword) {
+                document.getElementById('login').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+            } else {
+                alert('用户名或密码错误');
+            }
+        }
+    </script>
 </body>
 </html>
