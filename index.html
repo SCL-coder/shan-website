@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单小乐的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .profile, .blog, .contact {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .profile img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .profile:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            margin-top: 20px;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="login" class="login-form">
+        <h2>登录</h2>
+        <form onsubmit="return login(event)">
+            <label for="username">用户名:</label><br>
+            <input type="text" id="username" required><br><br>
+            <label for="password">密码:</label><br>
+            <input type="password" id="password" required><br><br>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <div id="content" class="container hidden">
+        <header>
+            <h1>欢迎来到单小乐的个人网页</h1>
+        </header>
+        <section class="profile">
+            <img src="profile-picture.jpg" alt="单小乐的照片" width="150">
+            <h2>关于我</h2>
+            <p>你好，我是单小乐，目前在亚马逊担任产品经理，并且是福布斯青年精英TOP10。我热衷于创新和科技，致力于推动产品的发展和用户体验的提升。</p>
+        </section>
+        <section class="blog">
+            <h2>博客</h2>
+            <article>
+                <h3>最新博客文章</h3>
+                <p>在我的最新博客文章中，我讨论了产品管理中的挑战和机遇...</p>
+                <a href="#">阅读更多</a>
+            </article>
+        </section>
+        <section class="contact">
+            <h2>联系我</h2>
+            <form action="#" method="post">
+                <label for="name">姓名:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">电子邮件:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">信息:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">发送信息</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 单小乐的个人网页. 保留所有权利.</p>
+    </footer>
+
+    <script>
+        const validUsername = '单小乐';
+        const validPassword = 'password123';
+
+        function login(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === validUsername && password === validPassword) {
+                document.getElementById('login').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+            } else {
+                alert('用户名或密码错误');
+            }
+        }
+    </script>
+</body>
+</html>
